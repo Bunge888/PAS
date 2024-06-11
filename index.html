@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body
+<form action="login.php" method="POST">
+  <fieldset>
+    <legend>Registrasi</legend>
+  <p></p>
+  <p>
+    nama:
+    <input type="text"name="nama">
+    </p>
+  
+    <p>
+      username
+      <input type="text"name="username">
+      </p>
+    
+      <p>
+        email
+           <input type="text"name="email">
+      </p>
+      <p>
+        password
+           <input type="text"name="password">
+             <p>jenis kelamin:
+        laki-laki
+        <input type="radio"name="opsi" value="laki-laki">
+        perempuan
+          <input type="radio"name="opsi" value="perempuan"
+      </p>
+      <p>
+            <label for="agama">Agama: </label>
+            <?php $agama = $siswa['agama']; ?>
+            <select name="agama">
+                <option <?php echo ($agama == 'Islam') ? "selected": "" ?>Islam</option>
+                <option <?php echo ($agama == 'Kristen') ? "selected": "" ?>Kristen</option>
+                <option <?php echo ($agama == 'Hindu') ? "selected": "" ?>Hindu</option>
+                <option <?php echo ($agama == 'Budha') ? "selected": "" ?>Budha</option>
+                <option <?php echo ($agama == 'Atheis') ? "selected": "" ?>Atheis</option>
+            </select>
+        </p>
+      <tr>
+        <td><b>Biografi </b></td>
+        <td>:</td>
+        <td><textarea cols="30" rows="7"></textarea>
+      </tr>
+  <input type="button" value="Daftar">
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
